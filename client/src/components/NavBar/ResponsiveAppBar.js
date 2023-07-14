@@ -70,13 +70,14 @@ function ResponsiveAppBar() {
             
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' ,  } }}>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'left',
+                
               }}
               keepMounted
               transformOrigin={{
@@ -124,7 +125,7 @@ function ResponsiveAppBar() {
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 href="/listcontacts"
               >
-                ListContact
+                Skins
               </Button>
 
               <Button               
@@ -153,7 +154,7 @@ function ResponsiveAppBar() {
               
               
               <Button onClick={handleCloseNavMenu} variant="contained" color="success" sx={{ my: 2, color: 'white', display: 'block' }} href="/AddContact">
-              AddContact
+              AddSkin
               </Button>
 
           </Box>
